@@ -13,6 +13,7 @@
     border: 1px solid black;
     border-radius: 5px;
     padding: 5px;
+    margin-top: 5px;
 }
 .titolino {
     display: flex;
@@ -21,10 +22,18 @@
     width: 23%;
     gap: 0;
     padding-top: 10px;
-    
+    margin-bottom: 15px;
 }
 .titolino h2,
 .titolino h3 {
-    margin: 5px; /* Rimuove margini sopra e sotto */
-    padding: 0; /* Assicura che non ci sia padding extra */
+    margin: 5px;
+    padding: 0;
+}
+.checklist {
+    display:flex;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.spazio {
+    padding-top: 10px;
 }
