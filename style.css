@@ -1,0 +1,30 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    text-align: left;
+    align-items: left;
+    border-radius: 5px;
+    padding: 20px;
+    border: 2px solid black;
+}
+.bottone {
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+.titolino {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 23%;
+    gap: 0;
+    padding-top: 10px;
+    
+}
+.titolino h2,
+.titolino h3 {
+    margin: 5px; /* Rimuove margini sopra e sotto */
+    padding: 0; /* Assicura che non ci sia padding extra */
+}
