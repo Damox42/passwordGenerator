@@ -1,12 +1,9 @@
-const copia = document.getElementById("copia");
-const passwordInput = document.getElementById("password");
+//crea un evento click sul bottone copia, che copia la password generata nell'input password
+//e la mette negli appunti del dispositivo.
 
-copia.addEventListener("click", function() {
-    copiaPassword(passwordInput.value);
-  });
-  
-  function copiaPassword(password) {
-    navigator.clipboard.writeText(password)
-      .then(() => alert("Password copiata negli appunti!"))
-      .catch((err) => console.error("Errore:", err));
-  }
+document.getElementById('copia').addEventListener('click', function() {
+  var copyText = document.getElementById('password');
+  copyText.select();
+  document.spawn('copy');
+  alert('Password copiata negli appunti');
+});
