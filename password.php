@@ -24,9 +24,9 @@
                 } else {
                     echo "<p>Seleziona almeno un tipo di carattere</p>";
                 }
-            } else {
-                echo "<p>La lunghezza della password deve essere compresa tra 6 e 20 caratteri</p>";
-            }  
+            }   
+        } else {
+            echo "<p>La lunghezza della password deve essere compresa tra 6 e 20 caratteri</p>";
         }
     }
 ?>
