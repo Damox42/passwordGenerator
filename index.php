@@ -22,6 +22,7 @@
         <label for="symbols">Simboli</label> <br>
             
         <button id="generate">Genera password</button>
+        <button id="generate">Copia password</button>
     </form>
 </body>
 </html>
