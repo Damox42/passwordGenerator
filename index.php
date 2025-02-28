@@ -35,6 +35,7 @@
             <label for="symbols">Simboli</label>
         </div>    
         <button id="generate" class="bottone">Genera password</button>
+        <button id="generate" class="bottone">Copia negli appunti</button>
 
     </form>
 </body>
