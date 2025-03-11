@@ -1,5 +1,6 @@
 <?php
     include 'index.php';
+    require_once 'utility/funzionePassword.php';
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $name = $_POST['name'];
         $lung_pass = $_POST['pass'];
@@ -19,8 +20,8 @@
                     $character .= '!@#$%&*()_+-=[]{};:,.<>?';
                 }
                 if ($character != '') {
-                    $password = substr(str_shuffle($character), 0, $lung_pass);
-                    echo "<p>Ciao $name, la tua password è: $password</p>";
+                    $password = generaPassword($character, $lung_pass);
+                    echo "<p>La password generata per $name è: $password</p>";
                 } else {
                     echo "<p>Seleziona almeno un tipo di carattere</p>";
                 }

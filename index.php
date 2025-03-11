@@ -7,11 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body> 
-<div class="titolino">
-    <h3>Non hai voglia di pensare ad una nuova password?</h3>
-    <h2>TRANQUILLO,</h2>
-    <h3>ci pensiamo noi!!!!</h3>
-</div>      
+    <?php include "partials/header.php" ?>     
 <form action="password.php" method="POST" class="login">
         <label for="name">Nome</label>
         <input type="text" name="name" id="name">
@@ -38,5 +34,6 @@
         <button id="generate" class="bottone">Copia negli appunti</button>
 
     </form>
+    <?php include "partials/footer.php" ?>
 </body>
 </html>
